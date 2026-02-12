@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.3",
+    "lastTouchedAt": "2026-02-12T06:18:27.668Z"
+  },
+  "agents": {
+    "defaults": { "maxConcurrent": 4, "subagents": { "maxConcurrent": 8 } },
+    "list": [
+      { "id": "defendml-forge", "name": "Forge", "model": "anthropic/claude-opus-4-5" },
+      { "id": "defendml-echo", "name": "Echo", "model": "anthropic/claude-sonnet-4-5" }
+    ]
+  },
+  "commands": { "native": "auto", "nativeSkills": "auto" },
+  "channels": {},
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "controlUi": { "allowInsecureAuth": true },
+    "auth": { "token": "DefendML2026SecureToken!" },
+    "trustedProxies": ["10.1.0.0"]
+  }
+}
